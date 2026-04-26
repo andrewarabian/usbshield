@@ -1,4 +1,4 @@
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/aa458cd8-6f64-4345-8f26-f7285c1b2a1b" />
+
 
 # USBshield
 
