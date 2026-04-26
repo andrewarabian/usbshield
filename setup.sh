@@ -165,17 +165,17 @@ enable_service() {
     fi
 }
 
-# ── install usbwarden ─────────────────────────────────────────────────────────
+# ── install usbshield ─────────────────────────────────────────────────────────
 install_helper() {
     local script_dir
     script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-    local helper="${script_dir}/usbwarden.sh"
+    local helper="${script_dir}/usbshield.sh"
 
     if [[ -f "$helper" ]]; then
-        install -m 0755 -o root -g root "$helper" /usr/local/bin/usbwarden
-        log_ok "Installed helper → /usr/local/bin/usbwarden"
+        install -m 0755 -o root -g root "$helper" /usr/local/bin/usbshield
+        log_ok "Installed helper → /usr/local/bin/usbshield"
     else
-        log_warn "usbwarden.sh not found in ${script_dir}, skipping"
+        log_warn "usbshield.sh not found in ${script_dir}, skipping"
     fi
 }
 
