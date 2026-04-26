@@ -87,7 +87,9 @@ sudo usbguard list-devices          # show all devices and their IDs
 sudo usbguard allow-device <ID>     # allow for current session only
 sudo usbguard block-device <ID>     # block for current session only
 ```
-### Please report all issues here
+---
+
+#### Please report all issues here
 
 https://github.com/andrewarabian/usb-warden/issues
 
