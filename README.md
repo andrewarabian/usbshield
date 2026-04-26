@@ -1,5 +1,7 @@
 # USBGuard
 
+Keep your device safe from unauthorized USB devices with this kernel level authentication tool.
+
 USBGuard controls which USB devices are allowed to connect. Unauthorized devices are blocked at the kernel level; they receive power but are not exposed to the OS.
 
 ## Requirements
