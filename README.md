@@ -1,6 +1,6 @@
 # USBGuard
 
-USBGuard controls which USB devices are allowed to connect. Unauthorized devices are blocked at the kernel level; they receive power but are not exposed to the OS.
+USBGuard controls which USB devices are allowed to connect. Unauthorized devices are blocked at the kernel level; they receive power but are not exposed to the OS until the user authorizes the device(s) with a certificate.
 
 ## Requirements
 
