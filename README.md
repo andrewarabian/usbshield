@@ -1,12 +1,12 @@
-# USBGuard
+# usbwarden
 
-USBGuard controls which USB devices are allowed to connect. Unauthorized devices are blocked at the kernel level; they receive power but are not exposed to the OS until the user authorizes the device(s) with a certificate.
+usbwarden is a wrapper for [usbguard](https://usbguard.github.io/) that provides an interactive interface for authorizing USB devices and writing permanent allow rules. usbguard is the underlying daemon that blocks unauthorized devices at the kernel level; devices receive power but are not exposed to the OS.
 
 ## Requirements
 
 - **OS:** Linux (systemd-based distributions)
 - **Shell:** Bash 4.0 or later
-- **Tools:** `usbguard`, `column` (util-linux), `tput` (ncurses)
+- **Dependencies:** `usbguard` (installed by `setup.sh`), `column` (util-linux), `tput` (ncurses)
 - **Privileges:** Root (`usbwarden` re-execs itself with `sudo` automatically)
 
 ## Setup
@@ -14,7 +14,7 @@ USBGuard controls which USB devices are allowed to connect. Unauthorized devices
 Run `setup.sh` once to install usbguard, seed an initial policy from currently connected devices, and enable the service:
 
 ```bash
-sudo ./setup.sh
+sudo bash setup.sh
 ```
 
 This handles package installation across apt, dnf/yum, zypper, pacman, apk, and portage-based systems. It also installs `usbwarden` to `/usr/local/bin/`.
@@ -23,8 +23,8 @@ This handles package installation across apt, dnf/yum, zypper, pacman, apk, and 
 
 Interactively authorize a connected USB device and write a permanent rule to `/etc/usbguard/rules.conf`.
 
-```
-sudo ./usbwarden
+```bash
+usbwarden
 ```
 
 ### What it does
@@ -64,7 +64,7 @@ cat /etc/usbguard/rules.conf
 Each rule looks like:
 
 ```
-# USB-Drive
+# Xbox-Controller
 allow id 045e:02fd ...
 ```
 
