@@ -14,7 +14,7 @@ usbshield is a wrapper for [usbguard](https://usbguard.github.io/) that provides
 Run `setup.sh` once to install usbguard, seed an initial policy from currently connected devices, and enable the service:
 
 ```bash
-sudo bash setup.sh
+sudo ./setup.sh
 ```
 
 This handles package installation across apt, dnf/yum, zypper, pacman, apk, and portage-based systems. It also installs `usbshield` to `/usr/local/bin/`.
@@ -23,8 +23,8 @@ This handles package installation across apt, dnf/yum, zypper, pacman, apk, and 
 
 Interactively authorize a connected USB device and write a permanent rule to `/etc/usbguard/rules.conf`.
 
-```bash
-usbshield
+```
+./usbshield
 ```
 
 ### What it does
