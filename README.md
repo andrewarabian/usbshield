@@ -64,7 +64,7 @@ cat /etc/usbguard/rules.conf
 Each rule looks like:
 
 ```
-# Xbox-Controller
+# USB-Controller
 allow id 045e:02fd ...
 ```
 
