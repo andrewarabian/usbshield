@@ -1,13 +1,13 @@
-# USBwarden
+# USBshield
 
-usbwarden is a wrapper for [usbguard](https://usbguard.github.io/) that provides an interactive interface for authorizing USB devices and writing permanent allow rules. usbguard is the underlying daemon that blocks unauthorized devices at the kernel level; devices receive power but are not exposed to the OS.
+usbshield is a wrapper for [usbguard](https://usbguard.github.io/) that provides an interactive interface for authorizing USB devices and writing permanent allow rules. usbguard is the underlying daemon that blocks unauthorized devices at the kernel level; devices receive power but are not exposed to the OS.
 
 ## Requirements
 
 - **OS:** Linux (systemd-based distributions)
 - **Shell:** Bash 4.0 or later
 - **Dependencies:** `usbguard` (installed by `setup.sh`), `column` (util-linux), `tput` (ncurses)
-- **Privileges:** Root (`usbwarden` re-execs itself with `sudo` automatically)
+- **Privileges:** Root (`usbshield` re-execs itself with `sudo` automatically)
 
 ## Setup
 
@@ -17,14 +17,14 @@ Run `setup.sh` once to install usbguard, seed an initial policy from currently c
 sudo bash setup.sh
 ```
 
-This handles package installation across apt, dnf/yum, zypper, pacman, apk, and portage-based systems. It also installs `usbwarden` to `/usr/local/bin/`.
+This handles package installation across apt, dnf/yum, zypper, pacman, apk, and portage-based systems. It also installs `usbshield` to `/usr/local/bin/`.
 
-## usbwarden
+## usbshield
 
 Interactively authorize a connected USB device and write a permanent rule to `/etc/usbguard/rules.conf`.
 
 ```bash
-usbwarden
+usbshield
 ```
 
 ### What it does
