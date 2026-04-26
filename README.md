@@ -89,7 +89,7 @@ sudo usbguard block-device <ID>     # block for current session only
 ```
 ---
 
-#### Please report all issues here
+#### Please report all issues
 
 https://github.com/andrewarabian/usb-warden/issues
 
