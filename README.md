@@ -23,8 +23,8 @@ This handles package installation across apt, dnf/yum, zypper, pacman, apk, and 
 
 Interactively authorize a connected USB device and write a permanent rule to `/etc/usbguard/rules.conf`.
 
-```bash
-usbwarden
+```
+sudo ./usbwarden
 ```
 
 ### What it does
