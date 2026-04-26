@@ -1,5 +1,6 @@
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/aa458cd8-6f64-4345-8f26-f7285c1b2a1b" />
+
 # USBshield
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/2ff590a5-a1e9-4aed-933a-a2d832441298" />
 
 usbshield is a wrapper for [usbguard](https://usbguard.github.io/) that provides an interactive interface for authorizing USB devices and writing permanent allow rules. usbguard is the underlying daemon that blocks unauthorized devices at the kernel level; devices receive power but are not exposed to the OS until a certificate is created to authorize the device for data transfer.
 
