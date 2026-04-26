@@ -14,7 +14,7 @@ USBGuard controls which USB devices are allowed to connect. Unauthorized devices
 Run `setup.sh` once to install usbguard, seed an initial policy from currently connected devices, and enable the service:
 
 ```bash
-sudo bash setup.sh
+sudo ./setup.sh
 ```
 
 This handles package installation across apt, dnf/yum, zypper, pacman, apk, and portage-based systems. It also installs `usbwarden` to `/usr/local/bin/`.
