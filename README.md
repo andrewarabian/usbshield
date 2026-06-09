@@ -2,7 +2,7 @@
 
 usbshield is a wrapper for [usbguard](https://usbguard.github.io/) that provides an interactive interface for authorizing USB devices and writing permanent allow rules. usbguard is the underlying daemon that blocks unauthorized devices at the kernel level; devices receive power but are not exposed to the OS until a certificate is created to authorize the device for data transfer.
 
-# USBGuard
+# USBGuard (RedHat)
 
 USBGuard is a great tool for protecting your infrastructure from unauthorized hardware by treating USB ports exactly like a network firewall. Just as we wouldn't let an unknown device plug into our network without authentication, USBGuard ensures no unauthorized USB device can interact with our operating systems. It stops keystroke-injection attacks, rogue network adapters, and weaponized thumb drives instantly at the hardware level, allowing us to enforce a strict zero-trust policy for every physical port in the building.
 
