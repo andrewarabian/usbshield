@@ -56,7 +56,10 @@ The `[!]` flag appears on any device that exposes a HID interface alongside one 
 | 2 | No external USB devices detected (not an error condition) |
 
 ## List authorized devices
-
+```bash
+sudo usbguard list-devices
+```
+or
 ```bash
 cat /etc/usbguard/rules.conf
 ```
