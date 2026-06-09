@@ -74,7 +74,8 @@ allow id 045e:02fd ...
    ```bash
    sudo nano /etc/usbguard/rules.conf
    ```
-2. Delete the comment line and the `allow` line for the device.
+2. Delete the comment line and the `allow` line for the select device.
+
 3. Restart USBGuard:
    ```bash
    sudo systemctl restart usbguard
